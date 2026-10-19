@@ -1,8 +1,12 @@
 {
   "functions": {
-    "api/index.php": {
-      "runtime": "vercel-php@0.7.3"
-    }
+    "api/index.php": { "runtime": "vercel-php@0.7.3" },
+    "api/ambil_data.php": { "runtime": "vercel-php@0.7.3" },
+    "api/ambil_historis.php": { "runtime": "vercel-php@0.7.3" },
+    "api/cek_historis.php": { "runtime": "vercel-php@0.7.3" },
+    "api/historis.php": { "runtime": "vercel-php@0.7.3" },
+    "api/index_json.php": { "runtime": "vercel-php@0.7.3" },
+    "api/unduh_historis.php": { "runtime": "vercel-php@0.7.3" }
   },
   "rewrites": [
     { "source": "/(.*)", "destination": "/api/index.php" }
