@@ -6,9 +6,11 @@
     "api/cek_historis.php": { "runtime": "vercel-php@0.7.3" },
     "api/historis.php": { "runtime": "vercel-php@0.7.3" },
     "api/index_json.php": { "runtime": "vercel-php@0.7.3" },
-    "api/unduh_historis.php": { "runtime": "vercel-php@0.7.3" }
+    "api/unduh_historis.php": { "runtime": "vercel-php@0.7.3" },
+    "index.php": { "runtime": "vercel-php@0.7.3" }
   },
   "rewrites": [
-    { "source": "/(.*)", "destination": "/api/index.php" }
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/index.php" }
   ]
 }
