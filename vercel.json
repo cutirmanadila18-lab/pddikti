@@ -7,19 +7,5 @@
     "api/*.php": {
       "runtime": "vercel-php@0.7.2"
     }
-  },
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/index.php"
-    },
-    {
-      "src": "/(.*\\.php)",
-      "dest": "/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.php"
-    }
-  ]
+  }
 }
