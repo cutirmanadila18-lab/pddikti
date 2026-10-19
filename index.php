@@ -7,9 +7,7 @@
 
 error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE);
 
-// ======================================================
 // ROUTING DELEGASI LANGSUNG UNDUH HISTORIS
-// ======================================================
 $requestPath = basename(parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH));
 if (
     $requestPath === 'unduh_historis.php' ||
@@ -24,6 +22,7 @@ if (
     if (file_exists(__DIR__ . '/unduh_historis.php')) {
         require __DIR__ . '/unduh_historis.php';
     } elseif (file_exists(__DIR__ . '/api/unduh_historis.php')) {
+        require __DIR__ . '/api/unduh_historis.php';
         require __DIR__ . '/api/unduh_historis.php';
     }
     exit;
